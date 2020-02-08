@@ -61,7 +61,7 @@ class Solution {
 ```
 
 ### ❗️ 💥 Caution : EmptyStackException
-Calling stack.pop() or stack.peek() on an empty stack will result in a EmptyStackException. So always make sure you don't call those method on an empty stack. In above implementation when there is only one `TreeNode` in the stack and we pop it, now there is nothing in the satck, so calling `stack.peek()` will result in EmptyStackException. So we add the check of, if the satck is not empty, then only we call `stack.peek()`
+Calling `stack.pop()` or `stack.peek()` on an empty stack will result in a EmptyStackException. So always make sure you don't call those method on an empty stack. In above implementation when there is only one `TreeNode` in the stack and we pop it, and the popped TreeNode doesn't have right and left child, so now there will be nothing in the stack, so calling `stack.peek()` will result in EmptyStackException. So we add the check of, if the stack is not empty, then only we call `stack.peek()`.
 
 
 
